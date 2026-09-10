@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卧式喷淋塔-工业废气处理设备选型与维护指南</title>
+    <meta name="description" content="了解卧式喷淋塔的工作原理、结构特点、应用场景与选型要点。提供废气处理设备维护方法、常见故障排查及技术问答，帮助企业高效完成废气净化达标排放。">
+    <meta name="keywords" content="卧式喷淋塔,喷淋塔,废气处理设备,酸雾净化塔,洗涤塔,填料塔,废气净化">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #1e2a33;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* 顶部 */
+        .site-header {
+            background: linear-gradient(145deg, #0b3d4f, #155e75);
+            color: #fff;
+            padding: 18px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .brand .sub-line {
+            font-size: 0.85rem;
+            opacity: 0.85;
+            margin-top: 2px;
+            letter-spacing: 0.3px;
+        }
+
+        .header-contact {
+            font-size: 0.95rem;
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .header-contact span {
+            display: inline-block;
+            margin-left: 20px;
+            opacity: 0.9;
+        }
+
+        .header-contact i {
+            font-style: normal;
+            background: rgba(255, 255, 255, 0.18);
+            padding: 2px 10px;
+            border-radius: 20px;
+            margin-right: 6px;
+        }
+
+        /* 导航 */
+        .main-nav {
+            background: #0e4b5e;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 12px 22px;
+            color: #e0f2fe;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-menu a:hover {
+            background: #0d3f4f;
+            color: #ffffff;
+        }
+
+        /* 首屏 hero */
+        .hero {
+            background: linear-gradient(135deg, #e7f0f4 0%, #d5e8ef 100%);
+            padding: 48px 0;
+            border-bottom: 1px solid #cbdde5;
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1 1 340px;
+        }
+
+        .hero-text h2 {
+            font-size: 2.4rem;
+            line-height: 1.25;
+            font-weight: 600;
+            color: #0b3d4f;
+            margin-bottom: 16px;
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            margin-bottom: 24px;
+            color: #2a4655;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .hero-highlights li {
+            list-style: none;
+            background: #ffffffd9;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #0d4b5c;
+            border: 1px solid #bed5e0;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: #0b6b82;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.2s;
+        }
+
+        .hero-cta:hover {
+            background: #094e60;
+        }
+
+        .hero-visual {
+            flex: 1 1 260px;
+            background: #ffffffcc;
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 8px 20px rgba(0, 40, 55, 0.08);
+            text-align: center;
+        }
+
+        .hero-visual .diagram {
+            font-size: 3.8rem;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: #155e75;
+        }
+
+        .hero-visual .diagram-label {
+            font-size: 1rem;
+            color: #2a4655;
+            font-weight: 500;
+        }
+
+        /* 信息卡片通用 */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #0b6b82;
+            display: inline-block;
+            color: #0d3b4a;
+        }
+
+        .section-sub {
+            color: #456473;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 24px 0;
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            border-top: 4px solid #2a8b9c;
+            transition: transform 0.15s, box-shadow 0.2s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+            color: #0d4b5c;
+            margin-bottom: 12px;
+        }
+
+        .info-card p {
+            font-size: 0.96rem;
+            color: #2f4a57;
+            margin-bottom: 8px;
+        }
+
+        /* 工作原理 */
+        .principle-block {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 32px;
+            margin: 20px 0;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+            border-left: 8px solid #0b6b82;
+        }
+
+        .principle-step {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .step-item {
+            flex: 1 1 180px;
+            background: #f0f7fa;
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .step-num {
+            display: inline-block;
+            background: #0b6b82;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            line-height: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .step-item strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        /* 表格 */
+        .table-wrap {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 24px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th {
+            background: #0b3d4f;
+            color: white;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #dce8ee;
+            background: #fafcfd;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* 应用场景 */
+        .app-area {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .app-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .app-tag {
+            background: #e1eff5;
+            border-radius: 30px;
+            padding: 8px 18px;
+            font-weight: 500;
+            color: #0d4b5c;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            margin: 24px 0;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0b3d4f;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e3edf2;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #0b6b82;
+        }
+
+        .faq-answer {
+            padding: 0 24px 18px;
+            color: #2f4a57;
+            font-size: 0.98rem;
+        }
+
+        /* 选型 checklist */
+        .checklist {
+            background: #f0f6f9;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 20px 0;
+        }
+
+        .checklist ul {
+            padding-left: 20px;
+        }
+
+        .checklist li {
+            margin-bottom: 10px;
+        }
+
+        /* 安全注意 */
+        .notice-box {
+            background: #fef7e8;
+            border: 1px solid #ecd9a8;
+            border-radius: 14px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+
+        .notice-box strong {
+            color: #7a5b12;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #0b2c36;
+            color: #b6d2de;
+            padding: 28px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-col p {
+            margin-bottom: 6px;
+        }
+
+        .footer-copy {
+            border-top: 1px solid #1d4a5a;
+            padding-top: 18px;
+            margin-top: 24px;
+            text-align: center;
+            color: #8ba9b6;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+            .header-contact {
+                text-align: left;
+                margin-top: 8px;
+            }
+            .nav-menu a {
+                padding: 10px 14px;
+                font-size: 0.9rem;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 16px;
+            }
+            .brand h1 {
+                font-size: 1.5rem;
+            }
+            .hero {
+                padding: 30px 0;
+            }
+            .hero-text h2 {
+                font-size: 1.7rem;
+            }
+            .info-card {
+                padding: 18px;
+            }
+            .principle-block, .app-area {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 指定广告脚本 -->
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>卧式喷淋塔</h1>
+                <div class="sub-line">工业废气净化 · 酸雾吸收 · 达标排放</div>
+            </div>
+            <div class="header-contact">
+                <span><i>方案咨询</i> 选型设计</span>
+                <span><i>安装服务</i> 售后运维</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#principle">工作原理</a></li>
+                <li><a href="#structure">结构特点</a></li>
+                <li><a href="#applications">应用场景</a></li>
+                <li><a href="#compare">选型对比</a></li>
+                <li><a href="#maintenance">维护指南</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 首屏 -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h2>高效废气净化设备<br>卧式喷淋塔选型与应用</h2>
+                    <p>卧式喷淋塔是工业废气处理中常用的气液传质设备，通过喷淋液与废气逆流接触，实现粉尘吸收、酸雾中和、异味去除等目的。本指南从原理、结构到选型维护，帮助您全面了解该设备。</p>
+                    <ul class="hero-highlights">
+                        <li>耐腐蚀材质</li>
+                        <li>低压损设计</li>
+                        <li>模块化组合</li>
+                        <li>操作简便</li>
+                    </ul>
+                    <a href="#compare" class="hero-cta">查看选型对比</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="diagram">🏭 ⇄ 💧</div>
+                    <div class="diagram-label">废气 → 喷淋吸收 → 洁净排放</div>
+                    <div style="margin-top: 18px; font-size: 0.95rem; color: #1b5e73;">卧式结构 · 占地面积小</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工作原理 -->
+        <section id="principle" class="container">
+            <h2 class="section-title">工作原理与核心机制</h2>
+            <p class="section-sub">卧式喷淋塔利用液体吸收法净化气体，适用于多种可溶性或反应性污染物。</p>
+            <div class="principle-block">
+                <div class="principle-step">
+                    <div class="step-item">
+                        <span class="step-num">1</span>
+                        <strong>废气导入</strong>
+                        <p style="font-size: 0.9rem;">废气经风机送入塔体入口段，均布后进入喷淋区。</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">2</span>
+                        <strong>喷淋接触</strong>
+                        <p style="font-size: 0.9rem;">循环泵将吸收液送至喷头，形成细小液滴与气体充分接触。</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">3</span>
+                        <strong>传质吸收</strong>
+                        <p style="font-size: 0.9rem;">污染物从气相转移至液相，发生物理吸收或化学反应。</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">4</span>
+                        <strong>除雾排放</strong>
+                        <p style="font-size: 0.9rem;">经除雾层去除夹带液滴，净化气体由出口排出。</p>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; background: #e7f2f6; padding: 14px 18px; border-radius: 8px; font-size: 0.95rem;"><strong>关键点：</strong>卧式喷淋塔将气流水平通过塔体，喷淋液垂直向下，形成错流接触。相比立式塔，它的高度更低，适合室内或层高受限的场所。</p>
+            </div>
+        </section>
+
+        <!-- 结构特点 -->
+        <section id="structure" class="container">
+            <h2 class="section-title">结构设计与材质选择</h2>
+            <p class="section-sub">合理的内部构造决定净化效率与运行稳定性。</p>
+            <div class="card-grid">
+                <div class="info-card">
+                    <h3>塔体主体</h3>
+                    <p>采用PP、PVC、FRP或不锈钢材质。PP适用于多数酸碱废气，FRP强度更高，不锈钢用于高温或特殊介质。</p>
+                </div>
+                <div class="info-card">
+                    <h3>喷淋系统</h3>
+                    <p>包括循环泵、管道、喷嘴。螺旋喷嘴或实心锥喷嘴可提高覆盖率，防止堵塞。喷淋层可设置多层。</p>
+                </div>
+                <div class="info-card">
+                    <h3>填料层</h3>
+                    <p>可填充多面空心球、拉西环等填料，增大气液接触面积，提高传质效率。填料层厚度根据工况设计。</p>
+                </div>
+                <div class="info-card">
+                    <h3>除雾装置</h3>
+                    <p>丝网除沫器或折流板除雾器，去除净化气体中的液滴，减少风机带水，保护后续设备。</p>
+                </div>
+                <div class="info-card">
+                    <h3>循环水箱</h3>
+                    <p>通常集成在塔体底部，储存吸收液，并设有补水、排污、pH监测接口。</p>
+                </div>
+                <div class="info-card">
+                    <h3>检修口与视窗</h3>
+                    <p>塔体侧面设置检修门、视镜和手孔，方便内部检查、填料更换及喷头清洗。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用场景 -->
+        <section id="applications" class="container">
+            <h2 class="section-title">适用行业与废气类型</h2>
+            <div class="app-area">
+                <p>卧式喷淋塔广泛用于电子、电镀、化工、实验室、污水处理厂、金属表面处理等行业。主要处理以下废气：</p>
+                <div class="app-tags">
+                    <span class="app-tag">硫酸雾</span>
+                    <span class="app-tag">盐酸雾</span>
+                    <span class="app-tag">氢氟酸</span>
+                    <span class="app-tag">氮氧化物(部分)</span>
+                    <span class="app-tag">铬酸雾</span>
+                    <span class="app-tag">碱性废气</span>
+                    <span class="app-tag">恶臭气体(水溶性)</span>
+                    <span class="app-tag">粉尘预洗</span>
+                </div>
+                <p style="margin-top: 18px; font-size: 0.95rem;">对于含有颗粒物的废气，喷淋同时起到洗涤除尘作用。若废气成分复杂或含难溶有机物，可与其他工艺（如活性炭吸附、UV光解）组合使用。</p>
+            </div>
+        </section>
+
+        <!-- 选型对比 -->
+        <section id="compare" class="container">
+            <h2 class="section-title">卧式 vs 立式喷淋塔</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>对比维度</th>
+                            <th>卧式喷淋塔</th>
+                            <th>立式喷淋塔</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>外形高度</td>
+                            <td>较低，适合室内或层高受限</td>
+                            <td>较高，需要较大垂直空间</td>
+                        </tr>
+                        <tr>
+                            <td>占地面积</td>
+                            <td>相对较大（水平方向）</td>
+                            <td>较小，节省地面面积</td>
+                        </tr>
+                        <tr>
+                            <td>气流方向</td>
+                            <td>水平错流</td>
+                            <td>垂直逆流</td>
+                        </tr>
+                        <tr>
+                            <td>传质效率</td>
+                            <td>良好，可通过填料优化</td>
+                            <td>逆流接触效率稍高</td>
+                        </tr>
+                        <tr>
+                            <td>安装维护</td>
+                            <td>内部组件易于检修，操作便利</td>
+                            <td>高处作业较多</td>
+                        </tr>
+                        <tr>
+                            <td>典型应用</td>
+                            <td>改造项目、空间受限、多级串联</td>
+                            <td>常规新建项目</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="checklist">
+                <h3 style="margin-bottom: 12px;">选型关键参数（需结合工况确定）</h3>
+                <ul>
+                    <li><strong>废气风量（m³/h）：</strong>决定塔体截面尺寸和风机功率。</li>
+                    <li><strong>污染物种类及入口浓度：</strong>影响液气比、填料类型和塔体材质。</li>
+                    <li><strong>净化效率要求：</strong>环保排放标准决定喷淋层数或是否串联。</li>
+                    <li><strong>废气温度与湿度：</strong>高温气体需降温或选耐温材质。</li>
+                    <li><strong>安装空间：</strong>长宽高限制直接影响选择卧式或立式。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 维护指南 -->
+        <section id="maintenance" class="container">
+            <h2 class="section-title">日常运行与维护建议</h2>
+            <div class="card-grid">
+                <div class="info-card">
+                    <h3>定期巡检</h3>
+                    <p>每日检查循环水泵运行声音、电流是否正常，喷淋压力是否稳定，观察视镜内喷淋覆盖情况。</p>
+                </div>
+                <div class="info-card">
+                    <h3>喷嘴清理</h3>
+                    <p>喷头易被结晶或杂质堵塞，建议每1-3个月拆洗一次。使用过滤网可减少堵塞频率。</p>
+                </div>
+                <div class="info-card">
+                    <h3>吸收液管理</h3>
+                    <p>定期检测循环液pH值，及时补充药剂或更换吸收液。防止吸收液饱和后净化效率下降。</p>
+                </div>
+                <div class="info-card">
+                    <h3>填料检查</h3>
+                    <p>每年检查填料是否有结垢、破碎或流失，必要时补充或更换，保证气液接触面积。</p>
+                </div>
+                <div class="info-card">
+                    <h3>风机保养</h3>
+                    <p>风机轴承定期加注润滑脂，检查皮带松紧及振动情况。确保除雾器正常，避免风机带液。</p>
+                </div>
+                <div class="info-card">
+                    <h3>防腐检查</h3>
+                    <p>检查塔体内壁、焊缝及法兰处有无腐蚀渗漏，尤其是焊接部位和底部水箱角落。</p>
+                </div>
+            </div>
+
+            <div class="notice-box">
+                <strong>⚠ 安全注意：</strong> 处理酸性或腐蚀性介质时，检修前必须排空塔内液体，用清水置换并通风置换，操作人员佩戴防护用品。电气检修须断电挂牌。
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section id="faq" class="container">
+            <h2 class="section-title">常见问题解答</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">卧式喷淋塔的净化效率一般能达到多少？</div>
+                    <div class="faq-answer">对于硫酸雾、盐酸雾等可溶性酸性气体，在合理设计液气比和填料厚度的情况下，去除率通常可达85%～95%以上。但具体效率受入口浓度、气速、喷淋密度等因素影响，建议通过模拟试验或参考同类工况案例。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">什么情况下适合选择卧式而不是立式？</div>
+                    <div class="faq-answer">当厂房高度有限、设备需要安装在室内或屋顶，或者改造项目场地狭长时，卧式喷淋塔优势明显。另外，卧式结构便于内部组件检修，在需要频繁维护的场合更受欢迎。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">循环液用什么药剂？多久更换一次？</div>
+                    <div class="faq-answer">处理酸性废气常用氢氧化钠（烧碱）溶液作为吸收液；处理碱性废气可用稀硫酸。更换周期取决于废气浓度和处理量，一般通过pH监测来控制，pH值超出设定范围即需加药或换液。许多系统采用自动加药装置。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">喷淋塔运行噪音大是什么原因？</div>
+                    <div class="faq-answer">噪音主要来自风机和水泵。检查风机叶轮是否积灰、轴承是否损坏、地脚螺栓是否松动；水泵是否有空转或汽蚀现象。另外，管路流速过高也可能产生啸叫，可加装消声器或软连接。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">冬季运行需要注意什么？</div>
+                    <div class="faq-answer">室外安装的卧式喷淋塔需做好循环管路和水箱的保温，防止液体结冰损坏泵体。若设备间断运行，停机后应排空塔内及管路中的液体。必要时增加伴热带。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 补充提示 -->
+        <section class="container">
+            <div style="background: #e2eef4; border-radius: 16px; padding: 24px; margin: 20px 0;">
+                <h3 style="color: #0b3d4f; margin-bottom: 8px;">技术选型建议</h3>
+                <p style="font-size: 1rem;">建议联系专业环保设备厂家，提供废气风量、成分、浓度及排放标准，由技术人员进行物料衡算和设备设计。对于含颗粒物、气溶胶或高温废气，可能需要前置旋风除尘、冷却塔或增设过滤装置。卧式喷淋塔常作为系统核心单元，与其他设备灵活组合。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <p><strong>卧式喷淋塔</strong></p>
+                    <p>工业废气净化设备 · 环保技术信息平台</p>
+                </div>
+                <div class="footer-col">
+                    <p>内容涵盖：设备原理、选型、维护、FAQ</p>
+                    <p>最终设备参数请咨询专业厂家</p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>© 2024 卧式喷淋塔选型指南 · 仅供参考，不构成采购承诺</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单FAQ折叠交互
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    this.style.borderBottom = '1px solid #e3edf2';
+                } else {
+                    answer.style.display = 'block';
+                    this.style.borderBottom = 'none';
+                }
+            });
+            // 默认隐藏答案，只显示问题
+            var ans = q.nextElementSibling;
+            ans.style.display = 'none';
+        });
+        // 第一个FAQ默认展开，增强互动
+        var firstQ = document.querySelector('.faq-question');
+        if (firstQ) {
+            var firstA = firstQ.nextElementSibling;
+            firstA.style.display = 'block';
+            firstQ.style.borderBottom = 'none';
+        }
+    </script>
+</body>
+</html>
